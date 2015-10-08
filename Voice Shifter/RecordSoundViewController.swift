@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundViewController.swift
 //  Voice Shifter
 //
 //  Created by Lab User on 10/8/15.
@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class RecordSoundViewController: UIViewController {
+    var audioRecorder:AVAudioRecorder!
     @IBOutlet weak var stopRecordBtn: UIButton!
     @IBOutlet weak var recordBtn: UIButton!
-    
     @IBOutlet weak var recordLbl: UILabel!
 
     override func viewDidLoad() {
@@ -32,11 +33,20 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(sender: UIButton)
     {
-        // TODO: display status text
-        // TODO: start recording voice
-            recordLbl.hidden = false
-            stopRecordBtn.hidden = false
+        recordLbl.hidden = false
+        stopRecordBtn.hidden = false
         recordBtn.enabled = false
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+        let recordingName = "my_audio.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = NSURL.fileURLWithPathComponents(pathArray)
+        print(filePath)
+        
+        let session = AVAudioSession.sharedInstance()
+        audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:], error: nil)
+        audioRecorder.meteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
         
         
     }
@@ -44,6 +54,7 @@ class ViewController: UIViewController {
     {
         recordLbl.hidden = true
         stopRecordBtn.hidden = true
+        audioRecorder.stop()
     }
 
 }

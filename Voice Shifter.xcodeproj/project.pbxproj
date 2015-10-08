@@ -10,7 +10,7 @@
 		680827671BC6FA5500CA989B /* PlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680827661BC6FA5500CA989B /* PlayAudioViewController.swift */; };
 		6808276D1BC707CA00CA989B /* slowsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6808276C1BC707CA00CA989B /* slowsound.mp3 */; };
 		68709CC71BC6AE3D00929B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68709CC61BC6AE3D00929B19 /* AppDelegate.swift */; };
-		68709CC91BC6AE3D00929B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68709CC81BC6AE3D00929B19 /* ViewController.swift */; };
+		68709CC91BC6AE3D00929B19 /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68709CC81BC6AE3D00929B19 /* RecordSoundViewController.swift */; };
 		68709CCC1BC6AE3D00929B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68709CCA1BC6AE3D00929B19 /* Main.storyboard */; };
 		68709CCE1BC6AE3D00929B19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68709CCD1BC6AE3D00929B19 /* Images.xcassets */; };
 		68709CD11BC6AE3D00929B19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68709CCF1BC6AE3D00929B19 /* LaunchScreen.xib */; };
@@ -33,7 +33,7 @@
 		68709CC11BC6AE3D00929B19 /* Voice Shifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Shifter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68709CC51BC6AE3D00929B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68709CC61BC6AE3D00929B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68709CC81BC6AE3D00929B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68709CC81BC6AE3D00929B19 /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		68709CCB1BC6AE3D00929B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68709CCD1BC6AE3D00929B19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		68709CD01BC6AE3D00929B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				68709CC61BC6AE3D00929B19 /* AppDelegate.swift */,
-				68709CC81BC6AE3D00929B19 /* ViewController.swift */,
+				68709CC81BC6AE3D00929B19 /* RecordSoundViewController.swift */,
 				680827661BC6FA5500CA989B /* PlayAudioViewController.swift */,
 				68709CCA1BC6AE3D00929B19 /* Main.storyboard */,
 				68709CCD1BC6AE3D00929B19 /* Images.xcassets */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68709CC91BC6AE3D00929B19 /* ViewController.swift in Sources */,
+				68709CC91BC6AE3D00929B19 /* RecordSoundViewController.swift in Sources */,
 				68709CC71BC6AE3D00929B19 /* AppDelegate.swift in Sources */,
 				680827671BC6FA5500CA989B /* PlayAudioViewController.swift in Sources */,
 			);

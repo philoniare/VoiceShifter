@@ -9,7 +9,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Voice_Shifter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundViewController" customModule="Voice_Shifter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -46,7 +46,7 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ax4-eX-j0L"/>
-                                    <segue destination="4DD-Gq-fEJ" kind="show" id="Ozl-yp-UbW"/>
+                                    <segue destination="4DD-Gq-fEJ" kind="show" identifier="stopRecording" id="Ozl-yp-UbW"/>
                                 </connections>
                             </button>
                         </subviews>
