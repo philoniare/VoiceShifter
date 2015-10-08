@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var recordLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func recordAudio(sender: UIButton) {
+        // TODO: display status text
+        // TODO: start recording voice
+            recordLbl.hidden = false
+        
+        
+        
+    }
+    @IBAction func stopRecord(sender: UIButton) {
+        recordLbl.hidden = true
+    }
 
 }
 

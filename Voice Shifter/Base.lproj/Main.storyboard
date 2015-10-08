@@ -21,35 +21,84 @@
                                 <state key="normal" image="Microphone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="123" y="250" width="155" height="100"/>
                                 </variation>
+                                <connections>
+                                    <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uem-ME-eqx"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-VS-yKr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="161" y="369" width="79" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-7b-bho">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="StopBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="171" y="522" width="58" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopRecord:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ax4-eX-j0L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="XQn-Dl-ULN" secondAttribute="centerY" id="1jo-40-yyW"/>
+                            <constraint firstItem="Wdq-VS-yKr" firstAttribute="top" secondItem="XQn-Dl-ULN" secondAttribute="bottom" constant="19" id="8F5-CK-XiZ"/>
+                            <constraint firstAttribute="centerY" secondItem="Rsa-7b-bho" secondAttribute="centerY" constant="-251" id="F3W-1M-N2v"/>
                             <constraint firstAttribute="centerX" secondItem="XQn-Dl-ULN" secondAttribute="centerX" constant="-0.5" id="MwN-N0-MoU"/>
+                            <constraint firstAttribute="centerX" secondItem="Wdq-VS-yKr" secondAttribute="centerX" id="Pfd-4A-2Q9"/>
+                            <constraint firstAttribute="centerX" secondItem="Rsa-7b-bho" secondAttribute="centerX" id="QEF-R2-2gY"/>
+                            <constraint firstAttribute="centerY" secondItem="Wdq-VS-yKr" secondAttribute="centerY" constant="-79.5" id="b9B-Lb-OBl"/>
+                            <constraint firstAttribute="centerY" secondItem="Rsa-7b-bho" secondAttribute="centerY" constant="-251" id="q7x-2y-Znm"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="XQn-Dl-ULN"/>
+                                <exclude reference="Wdq-VS-yKr"/>
+                                <exclude reference="Rsa-7b-bho"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="1jo-40-yyW"/>
                                 <exclude reference="MwN-N0-MoU"/>
+                                <exclude reference="8F5-CK-XiZ"/>
+                                <exclude reference="Pfd-4A-2Q9"/>
+                                <exclude reference="b9B-Lb-OBl"/>
+                                <exclude reference="F3W-1M-N2v"/>
+                                <exclude reference="QEF-R2-2gY"/>
+                                <exclude reference="q7x-2y-Znm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="XQn-Dl-ULN"/>
+                                <include reference="Wdq-VS-yKr"/>
+                                <include reference="Rsa-7b-bho"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="1jo-40-yyW"/>
                                 <include reference="MwN-N0-MoU"/>
+                                <include reference="8F5-CK-XiZ"/>
+                                <include reference="Pfd-4A-2Q9"/>
+                                <include reference="b9B-Lb-OBl"/>
+                                <include reference="F3W-1M-N2v"/>
+                                <include reference="QEF-R2-2gY"/>
+                                <include reference="q7x-2y-Znm"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordLbl" destination="Wdq-VS-yKr" id="S6j-ep-FpP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,5 +106,6 @@
     </scenes>
     <resources>
         <image name="Microphone" width="100" height="100"/>
+        <image name="StopBtn" width="100" height="100"/>
     </resources>
 </document>
