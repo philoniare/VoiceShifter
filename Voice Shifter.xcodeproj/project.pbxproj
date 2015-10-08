@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680827671BC6FA5500CA989B /* PlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680827661BC6FA5500CA989B /* PlayAudioViewController.swift */; };
+		6808276D1BC707CA00CA989B /* slowsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6808276C1BC707CA00CA989B /* slowsound.mp3 */; };
 		68709CC71BC6AE3D00929B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68709CC61BC6AE3D00929B19 /* AppDelegate.swift */; };
 		68709CC91BC6AE3D00929B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68709CC81BC6AE3D00929B19 /* ViewController.swift */; };
 		68709CCC1BC6AE3D00929B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68709CCA1BC6AE3D00929B19 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		680827661BC6FA5500CA989B /* PlayAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAudioViewController.swift; sourceTree = "<group>"; };
+		6808276C1BC707CA00CA989B /* slowsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = slowsound.mp3; path = "Voice Shifter/slowsound.mp3"; sourceTree = "<group>"; };
 		68709CC11BC6AE3D00929B19 /* Voice Shifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Shifter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68709CC51BC6AE3D00929B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68709CC61BC6AE3D00929B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 		68709CB81BC6AE3C00929B19 = {
 			isa = PBXGroup;
 			children = (
+				6808276C1BC707CA00CA989B /* slowsound.mp3 */,
 				68709CC31BC6AE3D00929B19 /* Voice Shifter */,
 				68709CD91BC6AE3D00929B19 /* Voice ShifterTests */,
 				68709CC21BC6AE3D00929B19 /* Products */,
@@ -79,6 +84,7 @@
 			children = (
 				68709CC61BC6AE3D00929B19 /* AppDelegate.swift */,
 				68709CC81BC6AE3D00929B19 /* ViewController.swift */,
+				680827661BC6FA5500CA989B /* PlayAudioViewController.swift */,
 				68709CCA1BC6AE3D00929B19 /* Main.storyboard */,
 				68709CCD1BC6AE3D00929B19 /* Images.xcassets */,
 				68709CCF1BC6AE3D00929B19 /* LaunchScreen.xib */,
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68709CCC1BC6AE3D00929B19 /* Main.storyboard in Resources */,
+				6808276D1BC707CA00CA989B /* slowsound.mp3 in Resources */,
 				68709CD11BC6AE3D00929B19 /* LaunchScreen.xib in Resources */,
 				68709CCE1BC6AE3D00929B19 /* Images.xcassets in Resources */,
 			);
@@ -214,6 +221,7 @@
 			files = (
 				68709CC91BC6AE3D00929B19 /* ViewController.swift in Sources */,
 				68709CC71BC6AE3D00929B19 /* AppDelegate.swift in Sources */,
+				680827671BC6FA5500CA989B /* PlayAudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				68709CE21BC6AE3D00929B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68709CE31BC6AE3D00929B19 /* Build configuration list for PBXNativeTarget "Voice ShifterTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				68709CE51BC6AE3D00929B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
